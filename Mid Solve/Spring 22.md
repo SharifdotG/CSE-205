@@ -1,12 +1,12 @@
 # CSE 205 Mid Solve - Spring 2022
 
-## 1.
+## 1
 
-### a.
+### a
 
 I would choose an array-based data structure to manage the list of students eligible for merit scholarships in Spring 2022. Arrays are a suitable choice for this task because they provide constant-time access to elements by index, and we know the maximum number of students in advance (assuming there's a fixed number of students eligible for the scholarship). This simplicity and efficiency make arrays a practical choice for storing this data.
 
-### b. Here is the pseudo code to manage the list of eligible students and perform some iterations on a sample dataset of at least 10 students:
+### b. Here is the pseudo code to manage the list of eligible students and perform some iterations on a sample dataset of at least 10 students
 
 ```pseudo
 # Define an array to store the eligible students' information.
@@ -35,6 +35,7 @@ END FOR
 ```
 
 Explanation:
+
 1. We declare an array `eligible_students` to store information about eligible students. `MAX_STUDENTS` represents the maximum number of students that can be eligible for the scholarship.
 
 2. We initialize an index variable `index` to keep track of the number of eligible students.
@@ -49,7 +50,7 @@ This pseudo code and algorithm use an array to efficiently store and manage the 
 
 ## 2. [NOT IN SYLLABUS]
 
-## 3.
+## 3
 
 ### a. **PUSH Operation in Stack:**
 
@@ -62,7 +63,7 @@ Here's an example of a 'PUSH' operation in a stack using an array:
 
 Let's assume we have an empty stack with an array `stack` of size 5:
 
-```
+```pseudo
 stack: [_, _, _, _, _]
 SP = 0 (initially pointing to the first position)
 ```
@@ -70,13 +71,15 @@ SP = 0 (initially pointing to the first position)
 Now, we want to push the element 10 onto the stack:
 
 1. Increment the Stack Pointer (SP):
-   ```
+
+   ```pseudo
    SP = SP + 1
    SP = 1
    ```
 
 2. Insert the Element 10 into the Stack:
-   ```
+
+   ```pseudo
    stack: [10, _, _, _, _]
    ```
 
@@ -121,20 +124,23 @@ END FUNCTION
 Now, let's perform 'POP' operations on the stack:
 
 1. Initial Stack:
-   ```
+
+   ```pseudo
    stack: [10, _, _, _, _]
    SP = 1
    ```
 
 2. First 'POP' Operation:
-   ```
+
+   ```pseudo
    POP() returns 10
    SP = 0
    stack: [_, _, _, _, _]
    ```
 
 3. Second 'POP' Operation (Stack Underflow):
-   ```
+
+   ```pseudo
    POP() returns NULL (as the stack is empty)
    SP = 0
    stack: [_, _, _, _, _]
@@ -142,7 +148,7 @@ Now, let's perform 'POP' operations on the stack:
 
 In this simulation, we successfully performed 'POP' operations on the stack. The stack pointer is decremented, and the top element is returned and removed from the stack. If the stack is empty, a "Stack Underflow" message is displayed.
 
-## 4.
+## 4
 
 ### a. **ENQUEUE Operation in Queue:**
 
@@ -155,7 +161,7 @@ Here's an example of an 'ENQUEUE' operation in a queue using an array:
 
 Let's assume we have an empty queue with an array `queue` of size 5:
 
-```
+```pseudo
 queue: [_, _, _, _, _]
 Front (FP) = 0 (initially pointing to the first position)
 Rear (RP) = 0 (initially pointing to the first position)
@@ -164,13 +170,15 @@ Rear (RP) = 0 (initially pointing to the first position)
 Now, we want to enqueue the element 20 into the queue:
 
 1. Increment the Rear Pointer (RP):
-   ```
+
+   ```pseudo
    RP = RP + 1
    RP = 1
    ```
 
 2. Insert the Element 20 into the Queue:
-   ```
+
+   ```pseudo
    queue: [20, _, _, _, _]
    ```
 
@@ -217,21 +225,24 @@ END FUNCTION
 Now, let's perform 'DEQUEUE' operations on the queue:
 
 1. Initial Queue:
-   ```
+
+   ```pseudo
    queue: [20, _, _, _, _]
    FP = 0
    RP = 1
    ```
 
 2. First 'DEQUEUE' Operation:
-   ```
+
+   ```pseudo
    DEQUEUE() returns 20
    FP = 1
    queue: [20, _, _, _, _]
    ```
 
 3. Second 'DEQUEUE' Operation:
-   ```
+
+   ```pseudo
    DEQUEUE() returns NULL (as the queue is empty)
    FP = 1
    queue: [20, _, _, _, _]

@@ -1,8 +1,8 @@
 # CSE 205 Mid Solve - Fall 2022
 
-## 1.
+## 1
 
-### a. To organize the information of students at U. A. High School, we can use an array-based data structure. We can create an array where each element corresponds to a student's unique ID, and the value at each index represents their power score. Here's a pseudocode to illustrate this:
+### a. To organize the information of students at U. A. High School, we can use an array-based data structure. We can create an array where each element corresponds to a student's unique ID, and the value at each index represents their power score. Here's a pseudocode to illustrate this
 
 ```python
 # Define an array to store power scores for each student
@@ -24,7 +24,7 @@ def get_power_score(student_id):
 
 In this pseudocode, `MAX_STUDENT_ID` represents the maximum possible student ID number. Each student's ID serves as an index in the `power_scores` array, allowing for efficient retrieval and update of their power scores.
 
-### b. To update the power score of a student (e.g., student ID 18), the authority can simply call the `update_power_score` function with the new score. Here's how it can be done:
+### b. To update the power score of a student (e.g., student ID 18), the authority can simply call the `update_power_score` function with the new score. Here's how it can be done
 
 ```python
 # Update the power score for student with ID 18 to 7
@@ -33,7 +33,7 @@ update_power_score(18, 7)
 
 This code will update the power score of student ID 18 to 7 in the `power_scores` array. No diagrams are necessary for this simple update operation, as it directly modifies the value at the corresponding index in the array.
 
-## 2.
+## 2
 
 ### a. **Comparison of Linear Search, Binary Search, and Interpolation Search:**
 
@@ -52,7 +52,7 @@ This code will update the power score of student ID 18 to 7 in the `power_scores
    - **Time Complexity**: O(log log n) on average, but it can degrade to O(n) in the worst case.
    - **Suitable for**: Sorted arrays with evenly distributed values.
 
-### b. **Counting the Number of '1's in a Sorted Binary Array using Linear Search**:
+### b. **Counting the Number of '1's in a Sorted Binary Array using Linear Search**
 
 Here's an algorithm to count the number of '1's in a sorted binary array using linear search. We will also simulate the iterations and draw diagrams for better understanding:
 
@@ -83,7 +83,8 @@ Let's simulate the algorithm with an example binary array `[0, 0, 1, 1, 1, 1]`:
 4. Return `count`, which is 4.
 
 Diagram:
-```
+
+```mathematica
 [0, 0, 1, 1, 1, 1]
          ^
          | (count = 1)
@@ -91,13 +92,13 @@ Diagram:
 
 In this example, the algorithm counted 4 '1's in the sorted binary array using linear search.
 
-## 3.
+## 3
 
 Sure, let's simulate the operations on a stack of size 5 step by step with diagrams and explanations:
 
 1. **Initialize an Empty Stack**:
 
-   ```
+   ```mathematica
    Stack: [ ][ ][ ][ ][ ]
    ```
 
@@ -112,8 +113,8 @@ Sure, let's simulate the operations on a stack of size 5 step by step with diagr
 
    - Pushing the element 5 onto the stack.
    - Stack after push:
-   
-   ```
+
+   ```mathematica
    Stack: [5][ ][ ][ ][ ]
    ```
 
@@ -121,8 +122,8 @@ Sure, let's simulate the operations on a stack of size 5 step by step with diagr
 
    - Pushing the element 3 onto the stack.
    - Stack after push:
-   
-   ```
+
+   ```mathematica
    Stack: [5][3][ ][ ][ ]
    ```
 
@@ -130,8 +131,8 @@ Sure, let's simulate the operations on a stack of size 5 step by step with diagr
 
    - Popping the top element from the stack.
    - Stack after pop:
-   
-   ```
+
+   ```mathematica
    Stack: [5][ ][ ][ ][ ]
    ```
 
@@ -144,8 +145,8 @@ Sure, let's simulate the operations on a stack of size 5 step by step with diagr
 
    - Pushing the element 7 onto the stack.
    - Stack after push:
-   
-   ```
+
+   ```mathematica
    Stack: [5][7][ ][ ][ ]
    ```
 
@@ -153,8 +154,8 @@ Sure, let's simulate the operations on a stack of size 5 step by step with diagr
 
    - Popping the top element from the stack.
    - Stack after pop:
-   
-   ```
+
+   ```mathematica
    Stack: [5][ ][ ][ ][ ]
    ```
 
@@ -162,8 +163,8 @@ Sure, let's simulate the operations on a stack of size 5 step by step with diagr
 
    - Popping the top element from the stack.
    - Stack after pop:
-   
-   ```
+
+   ```mathematica
    Stack: [ ][ ][ ][ ][ ]
    ```
 
@@ -176,20 +177,20 @@ Sure, let's simulate the operations on a stack of size 5 step by step with diagr
 
     - Pushing the element -1 onto the stack.
     - Stack after push:
-    
-    ```
+
+    ```mathematica
     Stack: [-1][ ][ ][ ][ ]
     ```
 
 Now, the stack has gone through all the specified operations. The final state of the stack is an empty stack with only one element (-1) pushed onto it.
 
-## 4.
+## 4
 
 Certainly, let's simulate the operations on a queue of size 5 step by step with diagrams and explanations:
 
 1. **Initialize an Empty Queue**:
 
-   ```
+   ```mathematica
    Front: [ ][ ][ ][ ][ ] :Rear
    ```
 
@@ -204,8 +205,8 @@ Certainly, let's simulate the operations on a queue of size 5 step by step with 
 
    - Enqueuing the element 5 into the queue.
    - Queue after enqueue:
-   
-   ```
+
+   ```mathematica
    Front: [5][ ][ ][ ][ ] :Rear
    ```
 
@@ -213,8 +214,8 @@ Certainly, let's simulate the operations on a queue of size 5 step by step with 
 
    - Enqueuing the element 3 into the queue.
    - Queue after enqueue:
-   
-   ```
+
+   ```mathematica
    Front: [5][3][ ][ ][ ] :Rear
    ```
 
@@ -222,8 +223,8 @@ Certainly, let's simulate the operations on a queue of size 5 step by step with 
 
    - Dequeuing the front element from the queue.
    - Queue after dequeue:
-   
-   ```
+
+   ```mathematica
    Front: [ ][3][ ][ ][ ] :Rear
    ```
 
@@ -236,8 +237,8 @@ Certainly, let's simulate the operations on a queue of size 5 step by step with 
 
    - Enqueuing the element 7 into the queue.
    - Queue after enqueue:
-   
-   ```
+
+   ```mathematica
    Front: [ ][3][7][ ][ ] :Rear
    ```
 
@@ -245,8 +246,8 @@ Certainly, let's simulate the operations on a queue of size 5 step by step with 
 
    - Dequeuing the front element from the queue.
    - Queue after dequeue:
-   
-   ```
+
+   ```mathematica
    Front: [ ][ ][7][ ][ ] :Rear
    ```
 
@@ -254,8 +255,8 @@ Certainly, let's simulate the operations on a queue of size 5 step by step with 
 
    - Dequeuing the front element from the queue.
    - Queue after dequeue:
-   
-   ```
+
+   ```mathematica
    Front: [ ][ ][ ][ ][ ] :Rear
    ```
 
@@ -268,8 +269,8 @@ Certainly, let's simulate the operations on a queue of size 5 step by step with 
 
     - Enqueuing the element -1 into the queue.
     - Queue after enqueue:
-    
-    ```
+
+    ```mathematica
     Front: [-1][ ][ ][ ][ ] :Rear
     ```
 
