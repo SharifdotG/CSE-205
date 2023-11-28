@@ -1,4 +1,4 @@
-# Spring 2023 Mid
+# Spring 2023 Mid Solve
 
 ## 1
 
