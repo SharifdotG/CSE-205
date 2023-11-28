@@ -1,19 +1,13 @@
-#include <bits/stdc++.h>
+#include <iostream>
 
 using namespace std;
 
 int main() {
-    int n;
-    cin >> n;
-    int arr[n];
-
-    for (int i = 0; i < n; i++) {
-        cin >> arr[i];
-    }
-
+    int arr[5] = {1, 2, 3, 2, 1};
     bool isPalindrome = true;
-    for (int i = 0; i < n / 2; i++) {
-        if (arr[i] != arr[n - i - 1]) {
+
+    for (int i = 0; i < 5; i++) {
+        if (arr[i] != arr[4 - i]) {
             isPalindrome = false;
             break;
         }
