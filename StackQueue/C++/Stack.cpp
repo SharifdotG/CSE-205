@@ -90,42 +90,27 @@ int main() {
                 cout << "Enter data: ";
                 cin >> data;
                 top = push(stack, top, max, data);
-                cout << "Now, the stack is pointed at index " << top + 1 << endl;
                 break;
-        
             case 2:
                 top = pop(stack, top);
-                cout << "Now, the stack is pointed at index " << top + 1 << endl;
                 break;
-        
             case 3:
                 peak(stack, top);
-                cout << "Now, the stack is pointed at index " << top + 1 << endl;
                 break;
-        
             case 4:
                 isEmpty(top);
-                cout << "Now, the stack is pointed at index " << top + 1 << endl;
                 break;
-        
             case 5:
                 isFull(top, max);
-                cout << "Now, the stack is pointed at index " << top + 1 << endl;
                 break;
-        
             case 6:
                 size(top);
-                cout << "Now, the stack is pointed at index " << top + 1 << endl;
                 break;
-        
             case 7:
                 display(stack, top);
-                cout << "Now, the stack is pointed at index " << top + 1 << endl;
                 break;
-        
             case 8:
                 exit(0);
-        
             default:
                 cout << "Invalid choice" << endl;
         }
