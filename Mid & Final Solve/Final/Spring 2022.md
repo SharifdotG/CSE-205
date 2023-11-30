@@ -651,3 +651,32 @@ Serve Customers:
 ```
 
 This pseudo code and setup would ensure efficient management of the cash counter, allowing a maximum of 11 customers in the queue and allocating service to a maximum of 5 counters simultaneously, reflecting the specified constraints based on the UAP ID digits.
+
+## 7. ii. A person, Gayle, wants to go to ... - Solve
+
+**ii.** The most appropriate data structure for implementing BFS is a **queue**. A queue is a data structure that follows the FIFO (First In First Out) principle. This means that the first element added to the queue is also the first element removed. This is ideal for BFS because it ensures that Gayle's closest friends are notified first.
+
+**Benefits of Using a Queue to Implement BFS:**
+
+- Queues are efficient for adding and removing elements from the beginning and end of the data structure.
+- Queues are easy to implement and use.
+- Queues are well-suited for BFS because they ensure that the algorithm explores all of the nodes at a given level before moving on to the next level.
+
+Here is a pseudocode implementation of BFS using a queue:
+
+```sql
+function BFS(graph, root):
+  queue = [root]
+
+  while queue is not empty:
+    node = queue.pop(0)
+
+    for neighbor in node.neighbors:
+      if neighbor not in visited:
+        visited.add(neighbor)
+        queue.append(neighbor)
+
+    // Notify the node of the picnic plan.
+```
+
+To use this implementation, you would first create a queue and add the root node (Gayle) to it. Then, you would iterate over the queue, removing the first node and adding all of its neighbors to the queue. If a neighbor is not already in the visited set, you would add it to the visited set and notify it of the picnic plan. You would continue this process until the queue is empty.
