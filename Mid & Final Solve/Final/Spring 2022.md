@@ -111,10 +111,6 @@ This stack implementation utilizing an array allows for easy manipulation of ele
 
 ## 1. b. Suppose you have been given an array of 8 elements which ... - Solve
 
-Absolutely, here's a formatted explanation in Markdown:
-
----
-
 ### Problem Statement
 
 You are provided with an array of 8 elements, with digits representing your UAP ID sequentially. The task is to print the array after removing all the non-duplicate elements using linear search. The objective is to create a pseudo-code along with necessary iterations and diagrams to solve this problem.
@@ -204,10 +200,6 @@ This diagram illustrates how each element in the array is checked for duplicates
 ### Conclusion
 
 The pseudo-code utilizes nested loops to iteratively identify and store duplicate elements from the given array using linear search. Through this process, it filters out non-duplicate elements and produces the expected output.
-
----
-
-Feel free to adapt this as needed for your specific context!
 
 ## 2. a. Compare 'Linear Search' with 'Binary Search'
 
