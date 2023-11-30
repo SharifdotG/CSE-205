@@ -111,60 +111,103 @@ This stack implementation utilizing an array allows for easy manipulation of ele
 
 ## 1. b. Suppose you have been given an array of 8 elements which ... - Solve
 
-### Pseudo Code for Removing Non-Duplicate Elements in an Array
+Absolutely, here's a formatted explanation in Markdown:
 
-#### Approach
+---
 
-1. Initialize an empty dictionary/hashmap to store element counts.
-2. Iterate through the array and count occurrences of each element.
-3. Iterate through the dictionary and collect elements that have a count of 1 (non-duplicates).
-4. Generate the final array with non-duplicate elements.
+### Problem Statement
 
-```plaintext
-// Initialize an empty dictionary
-Create a dictionary 'elementCount'
+You are provided with an array of 8 elements, with digits representing your UAP ID sequentially. The task is to print the array after removing all the non-duplicate elements using linear search. The objective is to create a pseudo-code along with necessary iterations and diagrams to solve this problem.
 
-// Iterate through the input array
-for each element in the array:
-    // Increment count for each element in the dictionary
-    if element exists in 'elementCount':
-        increment count of element
-    else:
-        set count of element as 1
+Example:
+Given input array: `{2, 0, 3, 0, 1, 0, 0, 1}`
+Expected output: `{1, 0}`
 
-// Initialize an empty array to store non-duplicate elements
-Create an empty array 'nonDuplicateElements'
-
-// Iterate through the dictionary
-for each element-count pair in 'elementCount':
-    // Check for non-duplicate elements (count = 1)
-    if count of element is 1:
-        Add element to 'nonDuplicateElements'
-
-// Print or return 'nonDuplicateElements'
-Print or return 'nonDuplicateElements'
-```
-
-#### Diagram (Visual Representation)
+### Pseudo-Code Solution
 
 ```yaml
-Input Array: {2, 0, 3, 0, 1, 0, 0, 1}
-
-// Dictionary to store element counts
-elementCount = {
-    2: 1,
-    0: 4,
-    3: 1,
-    1: 2
-}
-
-// Non-duplicate elements array
-nonDuplicateElements = {2, 3}
-
-Output: {2, 3}
+function removeNonDuplicates(inputArray):
+    duplicatesArray = []  // Initialize an empty array to store duplicates
+    for i from 0 to length(inputArray) - 1:
+        isDuplicate = false  // Flag to identify if element is a duplicate
+        for j from 0 to length(inputArray) - 1:
+            if i ≠ j and inputArray[i] = inputArray[j]:
+                isDuplicate = true  // Element is a duplicate
+                break  // No need to continue checking
+        if isDuplicate = true and inputArray[i] not in duplicatesArray:
+            duplicatesArray.append(inputArray[i])  // Add unique duplicate to list
+    return duplicatesArray
 ```
 
-This pseudo code defines a method to identify non-duplicate elements in an array and generate a new array with those elements. Adjustments in coding languages may be necessary for implementation.
+### Iterations
+
+Let's visualize the process for the example input `{2, 0, 3, 0, 1, 0, 0, 1}`:
+
+1. **Initial Array:** `{2, 0, 3, 0, 1, 0, 0, 1}`
+2. **Iteration 1:** Check `2` for duplicates (none found).
+3. **Iteration 2:** Check `0` for duplicates (duplicate found at index 3, 5, 6).
+4. **Iteration 3:** Check `3` for duplicates (none found).
+5. **Iteration 4:** Check `0` again (already identified as a duplicate).
+6. **Iteration 5:** Check `1` for duplicates (duplicate found at index 4, 7).
+7. **Final Result:** `{1, 0}` (duplicates found).
+
+### Diagrams
+
+Here's a diagram illustrating the iterations and identification of duplicate elements in the provided array `{2, 0, 3, 0, 1, 0, 0, 1}`:
+
+```css
+Initial Array: {2, 0, 3, 0, 1, 0, 0, 1}
+```
+
+```css
+Iteration 1: Check '2' for duplicates (none found)
+```
+
+```css
+Iteration 2: Check '0' for duplicates (found at index 3, 5, 6)
+```
+
+```css
+       | | |     |
+Array: {2, 0, 3, 0, 1, 0, 0, 1}
+         ^         ^     ^
+         |         |     |
+Indices: 0         3     5
+```
+
+```css
+Iteration 3: Check '3' for duplicates (none found)
+```
+
+```css
+Iteration 4: Check '0' again (already identified as a duplicate)
+```
+
+```css
+Iteration 5: Check '1' for duplicates (found at index 4, 7)
+```
+
+```css
+       | | |     |     |
+Array: {2, 0, 3, 0, 1, 0, 0, 1}
+         ^         ^         ^
+         |         |         |
+Indices: 0         3         5
+```
+
+```css
+Final Result: {1, 0} (duplicates found)
+```
+
+This diagram illustrates how each element in the array is checked for duplicates, and when duplicates are identified, they are marked for reference by their indices. Ultimately, the identified duplicate elements are retained in the final output.
+
+### Conclusion
+
+The pseudo-code utilizes nested loops to iteratively identify and store duplicate elements from the given array using linear search. Through this process, it filters out non-duplicate elements and produces the expected output.
+
+---
+
+Feel free to adapt this as needed for your specific context!
 
 ## 2. a. Compare 'Linear Search' with 'Binary Search'
 
@@ -357,7 +400,7 @@ Consider an example dataset sorted in ascending order:
    - Utilizes a heuristic approach considering the value range and distribution.
    - Estimates the probable location based on the value distribution.
 
-#### Diagrams
+#### Diagram
 
 **Binary Search Diagram:**
 
@@ -552,7 +595,6 @@ for i from 0 to length(students) - 1 do
 | 7         | 3.6               | Eligible        |
 | 8         | 3.9               | Eligible        |
 | 9         | 3.8               | Eligible        |
-
 
 This table showcases the indices, respective GPA scores, and eligibility of students for the merit scholarship in the Spring 2022 semester at UAP.
 
