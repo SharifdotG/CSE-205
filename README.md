@@ -1,6 +1,6 @@
 # CSE 205 - Data Structures
 
-This repo is for the **CSE 205: Data Structures** course at the Department of Computer Science and Engineering, University of Asia Pacific. This repository codes and implementations of Data Structures in the course. It also contains the solutions of **Mid and Final** Exams of **Spring 2023, 2022 and Fall 2022**.
+This repo is for the **CSE 205: Data Structures** course at the Department of Computer Science and Engineering, University of Asia Pacific. This repository contains codes and implementations of Data Structures in the course. It also contains the solutions of **Mid and Final** Exams of **Spring 2023, 2022 and Fall 2022**.
 
 ## Course Description
 
